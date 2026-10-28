@@ -1,0 +1,9 @@
+# Delta TechCare — robots.txt template
+# Placeholder for public deployment only.
+# On localhost this file does nothing (Google cannot crawl your machine).
+
+User-agent: *
+Allow: /
+
+# After deployment, uncomment and replace with real sitemap URL:
+# Sitemap: https://example.com/sitemap.xml

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Delta TechCare — sitemap.xml TEMPLATE.
+  IMPORTANT: Do NOT submit this with localhost URLs.
+  Replace every https://example.com/ placeholder with the real
+  public URL after deployment. Google cannot index a local site.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/index.html</loc><priority>1.0</priority></url>
+  <url><loc>https://example.com/services/laptop-hardware-repair.html</loc><priority>0.9</priority></url>
+  <url><loc>https://example.com/services/battery-chip-repair.html</loc><priority>0.9</priority></url>
+  <url><loc>https://example.com/contact-location.html</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/knowledge-park-student-repair-guide.html</loc><priority>0.8</priority></url>
+</urlset>
