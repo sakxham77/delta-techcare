@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Location | Delta TechCare Greater Noida (Demo)</title>
+  <meta name="description" content="Simulated contact details and demo pickup inquiry for Delta TechCare in Sector Delta 1, Greater Noida. Classroom prototype — no real bookings are made.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ComputerStore",
+    "name": "Delta TechCare (Educational Prototype)",
+    "telephone": "+91-00000-00000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No. 14, First Floor, Commercial Complex, Sector Delta 1",
+      "addressLocality": "Greater Noida",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "201310",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "19:00" }
+    ],
+    "disambiguatingDescription": "Fictional business used only for a Bennett University SEO course project."
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="edu-banner" role="note">
+  Classroom Educational Prototype — Bennett University SEO Course 2026 — Fictional Business — Demonstrational Only — Transactions Disabled.
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Delta TechCare home">
+      <span class="logo-mark" aria-hidden="true">Δ</span><span>Delta TechCare</span>
+    </a>
+    <div class="header-controls">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode"><span id="themeIcon">🌙</span></button>
+      <button class="nav-toggle icon-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="siteNav">☰</button>
+    </div>
+    <nav id="siteNav" class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services/laptop-hardware-repair.html">Laptop Repair</a></li>
+        <li><a href="services/battery-chip-repair.html">Battery &amp; Chip</a></li>
+        <li><a href="knowledge-park-student-repair-guide.html">Student Guide</a></li>
+        <li><a href="contact-location.html" class="nav-cta" aria-current="page">Book / Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact &amp; Location</h1>
+      <p>Simulated shop details and a demonstration pickup inquiry form. No real booking is created when you submit this form.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container stack">
+      <div class="info-box">
+        <strong>Simulated details.</strong> Delta TechCare is a fictional business created for a Bennett University SEO course. The address, phone number, opening hours and pickup process below are all educational content. No real Google Business Profile or Google Maps listing exists for this entity.
+      </div>
+
+      <h2>Simulated Shop Details</h2>
+      <p>
+        <strong>Address:</strong> Shop No. 14, First Floor, Commercial Complex, Sector Delta 1, Greater Noida, Uttar Pradesh 201310<br>
+        <strong>Demo phone:</strong> +91 00000 00000 (fictional)<br>
+        <strong>Demo email:</strong> hello@example-deltatechcare.test (fictional)<br>
+        <strong>Hours (simulated):</strong> Monday–Saturday, 10:00–19:00. Closed Sunday.
+      </p>
+
+      <h2>Directions &amp; Nearby Landmarks (Illustrative)</h2>
+      <ul>
+        <li>Near Sector Delta 1 market area</li>
+        <li>Approximately 10–15 minutes by auto from Pari Chowk (illustrative)</li>
+        <li>~20 minutes from Knowledge Park III (illustrative)</li>
+      </ul>
+
+      <h2>Simulated Service Coverage</h2>
+      <ul class="area-list">
+        <li>📍 Sector Delta 1</li>
+        <li>📍 Alpha 1 &amp; Alpha 2</li>
+        <li>📍 Gamma 1</li>
+        <li>📍 Pari Chowk</li>
+        <li>📍 Knowledge Park III</li>
+        <li>🎓 Bennett University student zone</li>
+      </ul>
+
+      <h2>Demonstration Contact Options</h2>
+      <p>
+        Clicking the phone or WhatsApp-style buttons below does <strong>not</strong> dial a real number and does <strong>not</strong> open a real WhatsApp chat. They are placeholders used to demonstrate how a real business would present its primary contact actions.
+      </p>
+      <div class="hero-actions">
+        <button type="button" class="btn btn-primary" onclick="showToast('Demo only — no real call is placed.', 'info')">📞 Call (demo)</button>
+        <button type="button" class="btn btn-ghost" onclick="showToast('Demo only — no real WhatsApp chat opens.', 'info')">💬 WhatsApp (demo)</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="inquiry">
+    <div class="container">
+      <h2>Demo Pickup Inquiry</h2>
+      <p>This form only validates your input and shows a demo confirmation in the browser. No data is sent anywhere and no booking is created.</p>
+
+      <form id="pickupForm" class="estimator" novalidate aria-describedby="formDisclaimer">
+        <p id="formDisclaimer" class="form-note">
+          Required fields are marked with an asterisk. Your input stays in this browser only.
+        </p>
+
+        <div class="form-grid">
+          <div class="form-field full">
+            <label for="pfName">Your name <span class="req">*</span></label>
+            <input type="text" id="pfName" name="name" autocomplete="name" required aria-describedby="errName">
+            <span class="field-error" id="errName" role="alert"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="pfDevice">Device type <span class="req">*</span></label>
+            <select id="pfDevice" name="device" required aria-describedby="errDevice">
+              <option value="">Select device…</option>
+              <option value="laptop">Laptop</option>
+              <option value="smartphone">Smartphone</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="field-error" id="errDevice" role="alert"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="pfModel">Device model (optional)</label>
+            <input type="text" id="pfModel" name="model" autocomplete="off">
+          </div>
+
+          <div class="form-field">
+            <label for="pfProblem">Problem category <span class="req">*</span></label>
+            <select id="pfProblem" name="problem" required aria-describedby="errProblem">
+              <option value="">Select problem…</option>
+              <option value="screen">Screen / display</option>
+              <option value="battery">Battery</option>
+              <option value="keyboard">Keyboard</option>
+              <option value="charging">Charging port</option>
+              <option value="motherboard">Motherboard / no power</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="field-error" id="errProblem" role="alert"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="pfPickupDate">Preferred pickup date <span class="req">*</span></label>
+            <input type="date" id="pfPickupDate" name="pickupDate" required aria-describedby="errPickupDate">
+            <span class="field-error" id="errPickupDate" role="alert"></span>
+          </div>
+
+          <div class="form-field full">
+            <label for="pfArea">General area or hostel zone <span class="req">*</span></label>
+            <select id="pfArea" name="area" required aria-describedby="errArea">
+              <option value="">Select area…</option>
+              <option>Sector Delta 1</option>
+              <option>Alpha 1</option>
+              <option>Alpha 2</option>
+              <option>Gamma 1</option>
+              <option>Pari Chowk</option>
+              <option>Knowledge Park III</option>
+              <option>Bennett University hostel zone</option>
+            </select>
+            <span class="field-error" id="errArea" role="alert"></span>
+          </div>
+
+          <div class="form-field full">
+            <label for="pfNotes">Short problem description (optional)</label>
+            <textarea id="pfNotes" name="notes" rows="3" maxlength="400" placeholder="e.g. screen flickers when the lid is opened"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">Submit demo inquiry</button>
+
+        <div id="pickupResult" class="estimator-result mt-2" aria-live="polite">
+          <span class="note">Your confirmation will appear here after you submit a valid form.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Privacy Notice</h2>
+      <p>This form is a prototype. Data entered here stays in your browser for the duration of the page session and is not sent to any server, third party, database, or analytics platform.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is the address real?</button>
+          <div class="faq-answer"><div class="faq-answer-inner">No. The address is a fictional demonstration address created for a university course.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What happens when I submit the form?</button>
+          <div class="faq-answer"><div class="faq-answer-inner">Your browser validates the fields and shows a demo confirmation. Nothing is sent anywhere and no repair is scheduled.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Do the call / WhatsApp buttons work?</button>
+          <div class="faq-answer"><div class="faq-answer-inner">They are demonstration buttons that show a toast message. No real call is placed and no real WhatsApp chat opens.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Delta TechCare</h4>
+        <ul>
+          <li>Shop No. 14, First Floor, Commercial Complex</li>
+          <li>Sector Delta 1, Greater Noida</li>
+          <li>Uttar Pradesh 201310</li>
+          <li>Demo phone: +91 00000 00000</li>
+          <li>Hours: Mon–Sat, 10:00–19:00 (simulated)</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services/laptop-hardware-repair.html">Laptop Hardware Repair</a></li>
+          <li><a href="services/battery-chip-repair.html">Battery &amp; Motherboard</a></li>
+          <li><a href="knowledge-park-student-repair-guide.html">Student Repair Guide</a></li>
+          <li><a href="contact-location.html">Contact &amp; Location</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <ul>
+          <li>Sector Delta 1</li>
+          <li>Alpha 1 &amp; Alpha 2</li>
+          <li>Gamma 1</li>
+          <li>Pari Chowk</li>
+          <li>Knowledge Park III</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <strong>Educational Disclaimer.</strong> This website is a classroom prototype built for the Bennett University SEO course (2026). Delta TechCare is a fictional business. All details are simulated for demonstration only. No real repair service is offered. No form on this site sends a real booking.
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Delta TechCare (fictional). Built for the Bennett University SEO course, Project P1.
+    </div>
+  </div>
+</footer>
+
+<div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+<button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
